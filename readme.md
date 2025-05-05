@@ -1,21 +1,23 @@
+![capa do projeto](./public/form-handler-cover.png)
+
 # 🧪 Form Handler
 
 Form Handler é um projeto fullstack de estudo que explora o fluxo completo de um formulário web — desde a validação no frontend até o armazenamento dos dados no backend. Ele foi pensado para praticar integração entre camadas, feedbacks ao usuário e uso de boas práticas com validação em ambos os lados da aplicação.
 
-## 📌 Objetivo
+### 📌 Objetivo
 
 O projeto tem como foco a criação de um formulário dinâmico com validação robusta e integração com uma API backend. O sistema garante que os dados sejam validados corretamente no frontend e backend, retornando mensagens apropriadas ao usuário.
 
-## 🧱 Tecnologias Utilizadas
+### 🧱 Tecnologias Utilizadas
 
-### Frontend
+#### Frontend
 
 - **React** com **TypeScript**
 - **React Hook Form** para controle do formulário
 - **Zod** para validação dos dados
 - **CSS:** para dar os estilos
 
-### Backend
+#### Backend
 
 - **Node.js** com **TypeScript**
 - **Express** para API REST
@@ -23,7 +25,7 @@ O projeto tem como foco a criação de um formulário dinâmico com validação 
 - **Prisma ORM** para acesso ao banco
 - **SQLite** como banco de dados
 
-## 📝 Funcionalidades
+### 📝 Funcionalidades
 
 - Formulário dinâmico com validações
 - Exibir/ocultar senha
@@ -32,15 +34,13 @@ O projeto tem como foco a criação de um formulário dinâmico com validação 
 - Feedback de erro e sucesso
 - Persistência dos dados em banco de dados
 
-## 📋 Validações do Formulário
+#### 👀 Por que esse projeto se destaca?
 
-- **Nome**: mínimo 1, máximo 255 caracteres
-- **Email, Senha e Confirmação**: obrigatórios
-- **Telefone, CPF, CEP**: obrigatórios e com máscara
-- **Endereço e Cidade**: preenchidos automaticamente após informar o CEP
-- **Aceite de Termos**: obrigatório (checkbox)
+- User-friendly: Feedback claro de erros e UX otimizado
+- Robusto: Validação em dupla camada (front + back) para evitar dados inválidos
+- Pronto para produção: Estrutura escalável e código tipado
 
-## 🔧 Como Rodar o Projeto
+### 🔧 Como Rodar o Projeto
 
 ```bash
 # Clone o repositório
@@ -64,6 +64,6 @@ cd server
 npm run dev
 ```
 
-## 📜 Licenca
+### 📜 Licenca
 
-Este projeto utiliza a licenca [MIT](./license).
+Este projeto utiliza a licença [MIT](./license).
