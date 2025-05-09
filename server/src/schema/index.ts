@@ -14,6 +14,7 @@ const customMessages = {
   minLengthPassword: `Precisa ter no mínimo ${values.minPasswordValue} caracteres`,
   maxLengthPassword: `Pode ter no máximo ${values.maxPasswordValue} caracteres`,
   maxLengthPhone: `Pode ter no máximo ${values.maxPhoneLength} números`,
+  acceptTerms: "É obrigatório aceitar os termos.",
 };
 
 export const DatabaseSchema = z.object({
@@ -37,7 +38,11 @@ export const DatabaseSchema = z.object({
     .string()
     .min(values.minPasswordValue, customMessages.minLengthPassword)
     .max(values.maxPasswordValue, customMessages.maxLengthPassword),
-  terms: z.literal(true),
+  terms: z.literal(true, {
+    errorMap: () => {
+      return { message: customMessages.acceptTerms };
+    },
+  }),
 });
 
 export type DatabaseSchemaType = z.infer<typeof DatabaseSchema>;
