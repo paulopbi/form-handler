@@ -47,7 +47,11 @@ export const DatabaseSchema = z
       .string()
       .min(values.minPasswordValue, customMessages.minLengthPassword)
       .max(values.maxPasswordValue, customMessages.maxLengthPassword),
-    terms: z.literal(true),
+    terms: z.literal(true, {
+      errorMap: () => {
+        return { message: customMessages.acceptTerms };
+      },
+    }),
   })
   .refine((data) => data.password === data.confirm_password, {
     message: "As senhas devem ser iguáis",
