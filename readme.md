@@ -1,8 +1,8 @@
-![capa do projeto](./public/form-handler-cover.png)
+![capa do projeto](./public/form-handler.png)
 
-# 🧪 Form Handler
+### Form Handler
 
-Form Handler é um projeto fullstack de estudo que explora o fluxo completo de um formulário web — desde a validação no frontend até o armazenamento dos dados no backend. Ele foi pensado para praticar integração entre camadas, feedbacks ao usuário e uso de boas práticas com validação em ambos os lados da aplicação.
+Form Handler é um projeto fullstack de estudo que explora o fluxo completo de um formulário web desde a validação no frontend até o armazenamento dos dados no backend. Ele foi pensado para praticar integração entre camadas, feedbacks ao usuário e uso de boas práticas com validação em ambos os lados da aplicação.
 
 ### 📌 Objetivo
 
@@ -25,6 +25,9 @@ O projeto tem como foco a criação de um formulário dinâmico com validação 
 - **Prisma ORM** para acesso ao banco
 - **SQLite** como banco de dados
 
+> [!NOTE]
+> O foco desse projeto não é o backend, isso é um extra, o foco fica no frontend com as válidações.
+
 ### 📝 Funcionalidades
 
 - Formulário dinâmico com validações
@@ -33,12 +36,12 @@ O projeto tem como foco a criação de um formulário dinâmico com validação 
 - Busca automática de endereço via API de CEP
 - Feedback de erro e sucesso
 - Persistência dos dados em banco de dados
-
-#### 👀 Por que esse projeto se destaca?
-
 - User-friendly: Feedback claro de erros e UX otimizado
-- Robusto: Validação em dupla camada (front + back) para evitar dados inválidos
-- Pronto para produção: Estrutura escalável e código tipado
+
+### 📸 Demonstração
+
+Vídeo de demonstração do projeto
+![demo do projeto](./public/form-handler.gif)
 
 ### 🔧 Como Rodar o Projeto
 
