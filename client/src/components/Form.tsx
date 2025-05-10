@@ -13,6 +13,7 @@ const Form = () => {
     setValue,
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<DatabaseSchemaType>({
     resolver: zodResolver(DatabaseSchema),
@@ -34,7 +35,7 @@ const Form = () => {
 
   const onSubmit: SubmitHandler<DatabaseSchemaType> = async (data) => {
     try {
-      const sendData = await fetch("http://localhost:3333/api/users", {
+      const sendData = await fetch("http://localhost:3333/create-user", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -42,7 +43,14 @@ const Form = () => {
         body: JSON.stringify(data),
       });
       const response = await sendData.json();
+
+      if (!sendData.ok) {
+        window.alert(response.message);
+        return;
+      }
+
       window.alert(response.message);
+      reset();
     } catch (error) {
       console.error(error);
     }
