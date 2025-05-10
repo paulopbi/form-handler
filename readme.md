@@ -40,8 +40,9 @@ O projeto tem como foco a criação de um formulário dinâmico com validação 
 
 ### 📸 Demonstração
 
-Vídeo de demonstração do projeto
-![demo do projeto](./public/form-handler.gif)
+<p align="center">
+  <img src="./public/form-handler.gif" alt="demo do projeto" />
+</p>
 
 ### 🔧 Como Rodar o Projeto
 
